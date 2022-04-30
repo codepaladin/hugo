@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>{{.Site.Title}}</title>
+</head>
+
+<body>
+<h1>{{.Title}}</h1>
+<ul>
+
+
+{{range .Pages}}
+<li>
+<a href="{{.Permalink}}">  {{.Title}}</a>
+</li>
+
+{{end}}
+</ul>
+This is specific to the blog
+</body>
+</html>
